@@ -53,7 +53,7 @@ body {
 	text-transform: uppercase;
 }
 .container {
-	display: none;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
@@ -148,6 +148,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+    align-items: center;
 	padding: 3em .5em;
 	min-height: 100vh;
 	width: 100%;
@@ -156,7 +157,7 @@ body {
 }
 .modal-box {
 	position: relative;
-	max-width: 400px;
+    width: 100%;
 }
 .modal-name {
 	color: var(--dark);
@@ -194,6 +195,12 @@ body {
 }
 .close {
     background: none;
-    padding: 1em;
+    padding: 1.5em;
+}
+.close-img {
+    transition: transform 0.3s;
+}
+.close:hover .close-img {
+transform: scale(1.5);
 }
 
