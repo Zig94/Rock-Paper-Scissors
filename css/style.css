@@ -7,19 +7,15 @@
 	padding: 0;
 }
 :root {
-	--scissors:hsl(40, 84%, 53%);
+	--scissors: hsl(40, 84%, 53%);
 	--paper: rgb(1, 138, 251);
 	--rock: hsl(349, 70%, 56%);
 	--lizard: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
 	--cyan: hsl(189, 59%, 53%), hsl(189, 58%, 57%);
 	--dark: hsl(229, 25%, 31%);
-	--score-text:  hsl(229, 64%, 46%);
-	--outline: hsl(217, 16%, 45%);
+	--score-text: hsl(229, 64%, 46%);
+	--outline: rgb(96, 110, 133);
 	--background: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
-}
-html,
-body {
-	height: 100%;
 }
 
 html {
@@ -49,80 +45,155 @@ button {
 
 body {
 	text-align: center;
-	min-height: 100vh;
 	font-size: 1.6rem;
 	font-weight: 600;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	color: #fff;
 	background-image: linear-gradient(var(--background));
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 .container {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	height: 100%;
+	min-height: 100vh;
 	padding: 3em 1.5em;
-    max-width: 400px;
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
 }
 .info-box {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: .5em 0.5em .5em 1em;
+	padding: 0.5em 0.5em 0.5em 1em;
 	width: 100%;
 	border: 2px solid var(--outline);
-    border-radius: 8px;
+	border-radius: 8px;
 }
 .game-name {
-    font-weight: inherit;
-    font-size: 2rem;
-    line-height: 80%;
-    text-align: left;
-    color: #fff;
+	font-weight: inherit;
+	font-size: 2rem;
+	line-height: 80%;
+	text-align: left;
+	color: #fff;
 }
 .score {
-    background-color: #fff;
-    padding:.5em 2em;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--score-text);
+	background-color: #fff;
+	padding: 0.5em 2em;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: bold;
+	color: var(--score-text);
 }
 .points {
-font-size: 3.5rem;
-color: var(--dark);
+	font-size: 3.5rem;
+	color: var(--dark);
 }
 .game-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	z-index: 1;
 }
 .btn {
-    padding: 1.5em;
-    margin: 1.8em;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 12px solid;
-    box-shadow: inset 1px 7px 5px rgb(0,0,0,.4) ;
-    transition: transform .3s ;
+	position: relative;
+	width: 120px;
+    height: 120px;
+	margin: 1.5em;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 12px solid;
+	box-shadow: inset 1px 7px 5px rgb(0, 0, 0, 0.4);
+	transition: transform 0.3s;
+	z-index: 10;
 }
 .btn:hover {
-   transform: scale(1.1); 
+	transform: scale(1.1);
 }
 .btn:active {
-    transform: scale(1);
+	transform: scale(1);
 }
-
 .paper {
-    border-color: var(--paper);
+	border-color: var(--paper);
 }
 .rock {
-    border-color: var(--rock);
+	margin-top: 0.5em;
+	border-color: var(--rock);
 }
 .scissors {
-    border-color: var(--scissors);
+	border-color: var(--scissors);
+}
+.rules-btn {
+	padding: 0.5em 2em;
+	background: none;
+	border: 2px solid var(--outline);
+	border-radius: 12px;
+	font-size: inherit;
+	text-transform: uppercase;
+	color: #fff;
+	transition: color 0.3s, background-color 0.3s;
+}
+.rules-btn:hover {
+	background-color: #fff;
+	color: var(--dark);
+}
+
+.modal {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 3em .5em;
+	min-height: 100vh;
+	width: 100%;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.modal-box {
+	position: relative;
+	max-width: 400px;
+}
+.modal-name {
+	color: var(--dark);
+	font-size: 3.2rem;
+}
+.btn.modal-btn {
+	border-color: rgb(128, 133, 147, 0.7);
+	box-shadow: none;
+    width: 80px;
+    height: 80px;
+    margin: 1.5em 0;
+}
+.modal-img {
+    width: 30px;
+	filter: invert(52%) sepia(29%) saturate(149%) hue-rotate(186deg) brightness(95%) contrast(88%);
+}
+.modal-btn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background-color: rgb(94, 103, 117, 0.2);
+}
+.win-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.beats{
+    color: rgb(128, 133, 147, 0.7) ;
+}
+.close {
+    background: none;
+    padding: 1em;
 }
 

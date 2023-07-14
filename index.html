@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,49 @@
 
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-<div class="container">
-  <div class="info-box">
-    <h1 class="game-name">rock <br>paper <br>scissors</h1>
-    <div class="score">
-      <p>score</p>
-      <p class="points">12</p>
+  <div class="container">
+    <div class="info-box">
+      <h1 class="game-name">rock <br>paper <br>scissors</h1>
+      <div class="score">
+        <p>score</p>
+        <p class="points">12</p>
+      </div>
     </div>
+
+    <div class="game-box">
+      <button class="btn paper"><img src="./images/icon-paper.svg" alt="" class="img"></button>
+      <button class="btn scissors"><img src="./images/icon-scissors.svg" alt="" class="img"></button>
+      <button class="btn rock"><img src="./images/icon-rock.svg" alt="" class="img"></button>
+    </div>
+
+    <button class="rules-btn">rules</button>
+
+
   </div>
-
-<div class="game-box">
-  <button class="btn paper"><img src="./images/icon-paper.svg" alt="" class="img"></button>
-  <button class="btn scissors"><img src="./images/icon-scissors.svg" alt="" class="img"></button>
-  <button class="btn rock"><img src="./images/icon-rock.svg" alt="" class="img"></button>
+  <div class="modal">
+    <h2 class="modal-name">rules</h2>
+    <div class="modal-box">
+      <div class="win-info">
+        <button class="btn modal-btn"><img src="./images/icon-scissors.svg" alt="" class="modal-img"></button><p class="beats">beats</p>
+        <button class="btn modal-btn modal-paper"><img src="./images/icon-paper.svg" alt="" class="modal-img"></button>
+      </div>
+      <div class="win-info">
+        <button class="btn modal-btn modal-paper"><img src="./images/icon-paper.svg" alt="" class="modal-img"></button><p class="beats">beats</p>
+        <button class="btn modal-btn"><img src="./images/icon-rock.svg" alt="" class="modal-img"></button>
+      </div>
+      <div class="win-info">
+        <button class="btn modal-btn"><img src="./images/icon-rock.svg" alt="" class="modal-img"></button><p class="beats">beats</p>
+        <button class="btn modal-btn"><img src="./images/icon-scissors.svg" alt="" class="modal-img"></button>
+      </div>
+    </div>
+    <button class="close"><img src="./images/icon-close.svg" alt="">
+  </button>
 </div>
-<button class="rules">rules</button>
-
-
-</div>
-
-  
-<script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
 
 
