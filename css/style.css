@@ -142,7 +142,6 @@ body {
 	border-color: var(--paper);
 }
 .rock {
-	margin-top: 0.5em;
 	border-color: var(--rock);
 }
 .scissors {
@@ -153,6 +152,31 @@ body {
     border: none;
     background-color: hsl(214, 47%, 23%);
     margin-top: 1em;
+}
+.win-info {
+	display: flex;
+	flex-direction: column;
+}
+.win-info-text {
+font-size: 4rem;
+}
+.play-again-btn {
+text-transform: uppercase;
+font-size: 1.8rem;
+font-weight: 600;
+padding: .7em 3.5em;
+border: none;
+border-radius: 12px;
+color: var(--dark);
+letter-spacing: 1px;
+margin-top: 1em;
+transition: transform 0.3s;
+}
+.play-again-btn:hover {
+	transform: scale(1.1);
+}
+.play-again-btn:active {
+	transform: scale(1);
 }
 .rules-btn {
 	padding: 0.5em 2em;
@@ -210,7 +234,7 @@ body {
 	border-radius: 50%;
 	background-color: rgb(94, 103, 117, 0.2);
 }
-.win-info {
+.win-modal {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
