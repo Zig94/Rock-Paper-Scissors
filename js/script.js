@@ -15,7 +15,7 @@ const winText = document.querySelector('.win-info-text')
 const points = document.querySelector('.points')
 const playAgainBtn = document.querySelector('.play-again-btn')
 const btnClasses = ['paper', 'scissors', 'rock']
-const randomNumber = Math.floor(Math.random() * btnClasses.length)
+let randomNumber
 let x = 0
 
 const showModal = () => {
@@ -53,9 +53,15 @@ function playGame() {
 		checkWhoWin()
 	}, 2000)
 }
+
+const createNumber = () => {
+  randomNumber = Math.floor(Math.random() * btnClasses.length)
+}
 const randomButtonSelect = () => {
+  createNumber()
 	waitBtn.classList.remove('btn-wait')
 	waitBtn.classList.add(btnClasses[randomNumber])
+  console.log(randomNumber);
 	if (waitBtn.classList.contains(btnClasses[randomNumber])) {
 		waitImg.setAttribute('src', `./images/icon-${btnClasses[randomNumber]}.svg`)
 	}
@@ -78,7 +84,6 @@ const checkWhoWin = () => {
   }
   winInfo.classList.remove('hide')
   hadlePoints()
-  console.log(waitBtn.classList);
 }
 const hadlePoints = () => {
   if(winText.textContent == 'you win') {
