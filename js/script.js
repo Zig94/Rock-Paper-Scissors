@@ -51,7 +51,7 @@ function playGame() {
 	}, 1000)
 	setTimeout(() => {
 		checkWhoWin()
-	}, 2000)
+	}, 1500)
 }
 
 const createNumber = () => {
