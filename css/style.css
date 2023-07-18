@@ -262,3 +262,21 @@ transform: scale(1.5);
 	margin: 1.5em;
 	border-radius: 50%;
 }
+@media(min-width: 992px) {
+	.game-name {
+		font-size: 3rem;
+	}
+	.score {
+		font-size: 1.5rem;
+		padding: 0.5em 1.5em;
+	}
+	.points {
+		font-size: 4.5rem;
+	}
+	.rules-btn {
+		font-size: 2rem;
+	}
+	.modal {
+		max-width: 700px;
+	}
+}
