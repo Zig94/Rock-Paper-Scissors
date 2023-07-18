@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://zig94.github.io/Rock-Paper-Scissors/)
+- Live Site URL: [Rock-Paper-Scissors](https://zig94.github.io/Rock-Paper-Scissors/)
 
 ## My process
 
