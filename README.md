@@ -4,7 +4,7 @@ This is the classic rock-paper-scissors game, available online.
 
 Choose your move and face your opponent in this simple but addictive game.
 
-Live demo: [Rock-Paper-Scissors Game](https://zig94.github.io/Rock-Paper-Scissors/).
+Live demo: [Rock-Paper-Scissors Game](https://maxszymanski.github.io/Rock-Paper-Scissors/).
 
 ## Table of Contents
 
@@ -28,11 +28,11 @@ Live demo: [Rock-Paper-Scissors Game](https://zig94.github.io/Rock-Paper-Scissor
 
 ## Technologies Used
 
-- [![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white&link=https://github.com/Zig94/)](https://github.com/Zig94/)
+- [![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white&link=https://github.com/maxszymanski/)](https://github.com/maxszymanski/)
 
-- [![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&link=https://github.com/Zig94/)](https://github.com/Zig94/)
+- [![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&link=https://github.com/maxszymanski/)](https://github.com/maxszymanski/)
 
-- [![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript&link=https://github.com/Zig94/)](https://github.com/Zig94/)
+- [![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript&link=https://github.com/maxszymanski/)](https://github.com/maxszymanski/)
 
 ## Screenshots
 
@@ -49,4 +49,4 @@ Live demo: [Rock-Paper-Scissors Game](https://zig94.github.io/Rock-Paper-Scissor
 
 ## Contact
 
-Created by [@Max Szymański](https://github.com/Zig94) - feel free to contact me!
+Created by [@Max Szymański](https://github.com/maxszymanski) - feel free to contact me!
