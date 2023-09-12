@@ -1,30 +1,52 @@
-## Table of contents
+# Rock-Paper-Scissors Game
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+This is the classic rock-paper-scissors game, available online.
 
-## Overview
+Choose your move and face your opponent in this simple but addictive game.
 
-### The challenge
+Live demo: [Rock-Paper-Scissors Game](https://zig94.github.io/Rock-Paper-Scissors/).
 
-Users should be able to:
+## Table of Contents
 
-- View the optimal layout for the game depending on their device's screen size
-- Play Rock, Paper, Scissors against the computer
-- Maintain the state of the score after refreshing the browser _(optional)_
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
+- [Project Status](#project-status)
+- [Contact](#contact)
 
-### Links
+## General Information
 
-- Live Site URL: [Rock-Paper-Scissors](https://zig94.github.io/Rock-Paper-Scissors/)
+- The player can choose from three options: stone, paper or scissors. He chooses what he thinks is the best move.
 
-## My process
+- After making a selection, the user is presented with a comparison of his choice with that of the computer, which also makes a random selection of one of the options.
 
-### Built with
+- Based on the comparison of choices, the user is told whether he won, lost or tied in a round.
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
+- The result of the round is recorded, and the user receives points for wins (+1 point) and loses points for losses (-1 point).
+
+- The game score and player points are not reset when the page is refreshed. The game state is stored between sessions, allowing the player to continue playing from the last saved score.
+
+## Technologies Used
+
+- [![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white&link=https://github.com/Zig94/)](https://github.com/Zig94/)
+
+- [![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&link=https://github.com/Zig94/)](https://github.com/Zig94/)
+
+- [![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript&link=https://github.com/Zig94/)](https://github.com/Zig94/)
+
+## Screenshots
+
+![Start](./images/screenshots-rock/screen1.png)
+![Search](./images/screenshots-rock/screen2.png)
+
+## Project Status
+
+- The goal of this project was to better understand how JavaScript works through practical application in creating an interactive game.
+
+- I wanted to understand how to effectively manipulate elements on a page to deliver a seamless and interactive experience.
+
+- The application is no longer being developed and was created solely for research purposes. After completing the project, I have achieved my goals.
+
+## Contact
+
+Created by [@Max Szymański](https://github.com/Zig94) - feel free to contact me!
