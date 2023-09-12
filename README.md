@@ -36,8 +36,8 @@ Live demo: [Rock-Paper-Scissors Game](https://zig94.github.io/Rock-Paper-Scissor
 
 ## Screenshots
 
-![Start](./images/screenshots-rock/screen_1.png)
-![Search](./images/screenshots-rock/screen_2.png)
+![Start](./images/screenshots-rock/screen-1.png)
+![Search](./images/screenshots-rock/screen-2.png)
 
 ## Project Status
 
